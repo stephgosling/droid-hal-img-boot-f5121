@@ -1,4 +1,4 @@
-%define device f5121
+%define device f5321
 
 %define mkbootimg_cmd mkbootimg --ramdisk %{initrd}  --kernel %{kernel} --base 0x80000000 --pagesize 2048 --cmdline "lpm_levels.sleep_disabled=1 user_debug=31 androidboot.selinux=permissive msm_rtb.filter=0x3F ehci-hcd.park=3 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y coherent_pool=8M sched_enable_power_aware=1 androidboot.hardware=suzu"  --output
 
